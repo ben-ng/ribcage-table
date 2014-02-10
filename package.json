@@ -1,6 +1,6 @@
 {
   "name": "ribcage-table",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A simple table view ribcage-ui",
   "main": "table.js",
   "dependencies": {
@@ -34,6 +34,7 @@
     "ribcage-ui",
     "backbone"
   ],
+  "style": "table.css",
   "author": "Ben Ng <me@benng.me>",
   "license": "MIT"
 }
