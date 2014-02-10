@@ -268,10 +268,17 @@ body {
     position: absolute;
   }
 }
-;.ribcage-table-row {
+
+
+.ribcage-table-row {
   position: relative;
   height: 44px;
+  line-height: 44px;
   border-bottom: 1px solid #CCC;
   padding: 0 10px;
   overflow: hidden;
+}
+
+.ribcage-table {
+  border-top: 1px solid #CCC;
 }

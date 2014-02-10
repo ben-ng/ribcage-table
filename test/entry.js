@@ -3,6 +3,7 @@
 var assert = require('assert')
   , fixture = document.getElementById('fixture')
   , TableView = require('../table.js')
+  , TableRow = require('ribcage-table-row')
   , instances = {}; // A temporary holder that we can `delete` to clear leaks
 
 mocha.setup({
@@ -49,6 +50,28 @@ describe('A Simple Table', function () {
   });
 
   delete instances.viewInstance;
+});
+
+describe('Another Table', function () {
+
+  it('should not throw when initialized with a root view', function () {
+    var MyTableView = TableView.extend({
+      getNumberOfRows: function () {
+        return 5;
+      }
+    , getRowForIndex: function (index) {
+        return new TableRow({
+          text: 'Row ' + index
+        });
+      }
+    });
+
+    instances.viewInstance = new MyTableView({});
+  });
+
+  it('Should leak a table with five elements for visual checking', function () {
+    fixture.appendChild(instances.viewInstance.el);
+  });
 });
 
 // Need this to be leakproof

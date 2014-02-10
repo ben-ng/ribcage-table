@@ -1,11 +1,11 @@
 {
   "name": "ribcage-table",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "A simple table view ribcage-ui",
   "main": "table.js",
   "dependencies": {
     "ribcage-view": "Techwraith/ribcage-view"
-  , "ribcage-table-row": "~0.0.5"
+  , "ribcage-table-row": "~0.1.0"
   },
   "devDependencies": {
     "atomify-js": "~0.2.0",

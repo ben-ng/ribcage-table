@@ -31,6 +31,12 @@ npm install ribcage-table
 
 ```
 
+## Tests
+
+A successful test run should look something like this:
+
+![Reference Image](https://github.com/ben-ng/ribcage-table/raw/master/test/reference.png)
+
 ## License
 
 The MIT License
