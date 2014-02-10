@@ -1,5 +1,5 @@
-Ribcage Switcher
-================
+Ribcage Table
+=============
 
 A simple table view for `ribcage-ui`.
 
